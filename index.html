@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubham Ajbale | Cloud & DevOps Engineer</title>
+
+<style>
+:root{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --accent:#38bdf8;
+    --text:#f8fafc;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(15,23,42,.9);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:bold;
+    color:var(--accent);
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    position:relative;
+    overflow:hidden;
+    background:
+    radial-gradient(circle at top right,#38bdf825,transparent 40%),
+    linear-gradient(135deg,#0f172a,#111827);
+}
+
+.hero-content{
+    max-width:700px;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    color:var(--accent);
+    margin-bottom:20px;
+}
+
+.hero p{
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+.hero-image{
+    position:absolute;
+    right:-50px;
+    bottom:-40px;
+    height:100%;
+    opacity:.25;
+    mask-image:linear-gradient(to left,black,transparent);
+}
+
+.btn-group{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.btn{
+    padding:12px 22px;
+    border-radius:10px;
+    border:1px solid var(--accent);
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:var(--accent);
+    color:black;
+}
+
+.section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    color:var(--accent);
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:var(--card);
+    padding:25px;
+    border-radius:15px;
+}
+
+.project h3{
+    margin-bottom:15px;
+    color:var(--accent);
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline-item{
+    background:var(--card);
+    margin-bottom:20px;
+    padding:20px;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #334155;
+}
+
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.hero-image{
+    display:none;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="nav-container">
+<div class="logo">Shubham Ajbale</div>
+
+<div class="nav-links">
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Shubham Chhagan Ajbale</h1>
+
+<h2 id="typing"></h2>
+
+<p>
+Aspiring Cloud & DevOps Engineer with hands-on experience of DevOps tools and cloud platforms. Skilled in CI/CD, containerization and infrastructure automation. Passionate about building scalable and efficient systems.
+</p>
+
+<div class="btn-group">
+
+<a href="resume.pdf" download class="btn">
+📄 Resume
+</a>
+
+<a href="https://github.com/shubham-ajbale"
+target="_blank"
+class="btn">
+GitHub
+</a>
+
+<a href="https://gitlab.com/shubham-ajbale"
+target="_blank"
+class="btn">
+GitLab
+</a>
+
+<a href="https://www.naukri.com/mnjuser/profile?id=&altresid"
+target="_blank"
+class="btn">
+Naukri
+</a>
+
+</div>
+
+</div>
+
+<img src="profile.png" class="hero-image">
+
+</section>
+
+<section class="section" id="skills">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="card">AWS</div>
+<div class="card">Google Cloud</div>
+<div class="card">Microsoft Azure</div>
+<div class="card">Docker</div>
+<div class="card">Kubernetes</div>
+<div class="card">Terraform</div>
+<div class="card">Ansible</div>
+<div class="card">Jenkins</div>
+<div class="card">GitHub Actions</div>
+<div class="card">GitLab CI/CD</div>
+<div class="card">BitBucket</div>
+<div class="card">CloudWatch</div>
+<div class="card">Datadog</div>
+<div class="card">Prometheus</div>
+<div class="card">Grafana</div>
+<div class="card">Linux</div>
+<div class="card">Python</div>
+<div class="card">Shell Scripting</div>
+<div class="card">Hashicorp</div>
+<div class="card">Groovy Scripting</div>
+<div class="card">YAML</div>
+<div class="card">Nginx</div>
+<div class="card">MongoDBCompass</div>
+<div class="card">SonarQube</div>
+
+</div>
+
+</section>
+
+<section class="section" id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="project-grid">
+
+<div class="project">
+<h3>The Hug – eBook Website</h3>
+
+<p>
+Deployed a static book website on Amazon S3 with public access configuration. Integrated Amazon CloudFront for global content delivery and HTTPS support. Configured Route 53 with custom domain and DNS routing to CloudFront.
+Implemented monitoring and logging using Amazon CloudWatch.
+Set up access logs and performance metrics for traffic analysis.
+Automated deployment using Git + AWS CLI. Enabled caching and compression via CloudFront for faster load times.
+Applied AWS security best practices using bucket policies and restricted access.
+</p>
+
+<br>
+
+<a href="https://github.com/shubham-ajbale/Book-Site-The-Hug"
+target="_blank"
+class="btn">
+View Project
+</a>
+
+</div>
+
+<div class="project">
+
+<h3>EasyCRUD – Three Tier Architecture</h3>
+
+<p>
+Deployed the EasyCRUD web application on AWS EC2 using Linux servers.
+Built a CI/CD pipeline with Jenkins to automate build, test, and deployment.
+Used GitHub for version control and automated pipeline triggers.
+Exposed application using Nginx as reverse proxy and load balancer.
+Implemented monitoring and alerting using Datadog (CPU, memory, container health).
+Configured logs and dashboards for application performance tracking.
+Applied security best practices: IAM roles, security groups, and restricted access.
+</p>
+
+<br>
+
+<a href="https://github.com/shubham-ajbale/EasyCRUD"
+target="_blank"
+class="btn">
+View Project
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="education">
+
+<h2 class="section-title">Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>B.Tech – AI & Data Science</h3>
+<p>Wainganga College of Engineering and Management, Nagpur</p>
+<p>2023 – 2026</p>
+</div>
+
+<div class="timeline-item">
+<h3>Diploma – Computer Science Engineering</h3>
+<p>TGP College of Engineering & Technology, Nagpur</p>
+<p>2021 – 2023</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p>📧 shubhamajbale9@gmail.com</p>
+<p>📧 shubhamajbale8@gmail.com</p>
+<p>📧 shubhamajbale9@outlook.com</p>
+<p>📱 +91 9579099267</p>
+<p>📍 Nagpur, Hyderabad, Chennai, Bengaluru, Gurgaon</p>
+
+</section>
+
+<footer>
+© 2026 Shubham Chhagan Ajbale | Cloud & DevOps Engineer
+</footer>
+
+<script>
+const text = "Cloud & DevOps Engineer";
+let i = 0;
+
+function type(){
+    if(i < text.length){
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type,100);
+    }
+}
+type();
+</script>
+
+</body>
+</html>
